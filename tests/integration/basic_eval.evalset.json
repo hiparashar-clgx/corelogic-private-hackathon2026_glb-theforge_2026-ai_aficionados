@@ -1,0 +1,94 @@
+{
+  "eval_set_id": "basic_eval",
+  "name": "basic_eval",
+  "description": null,
+  "eval_cases": [
+    {
+      "eval_id": "hello_with_user",
+      "conversation": [
+        {
+          "invocation_id": "e-d9c60b47-0ffe-4e82-9112-2b9ff8601c8a",
+          "user_content": {
+            "parts": [
+              {
+                "text": "say hello to steve"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello, steve!\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-9f979359-ca09-479d-8a04-88d8ff3972ae",
+                "args": {
+                  "name": "steve"
+                },
+                "name": "say_hello"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1749138076.500934
+        }
+      ],
+      "session_input": {
+        "app_name": "agent",
+        "user_id": "user",
+        "state": {}
+      },
+      "creation_timestamp": 1749138365.323353
+    },
+    {
+      "eval_id": "hello_without_user",
+      "conversation": [
+        {
+          "invocation_id": "no_user_id",
+          "user_content": {
+            "parts": [
+              {
+                "text": "say hello"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello, User!\n"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-9f979359-ca09-479d-8a04-88d8ff3972ae",
+                "args": {
+                  "name": "User"
+                },
+                "name": "say_hello"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1749138076.500934
+        }
+      ],
+      "session_input": {
+        "app_name": "agent",
+        "user_id": "user",
+        "state": {}
+      },
+      "creation_timestamp": 1749138365.323353
+    }
+  ],
+  "creation_timestamp": 1749138310.612254
+}
