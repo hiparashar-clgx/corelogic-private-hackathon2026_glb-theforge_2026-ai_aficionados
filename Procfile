@@ -1,1 +1,0 @@
-web: python src/cotality/agent/server.py
